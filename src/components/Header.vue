@@ -1,6 +1,6 @@
 <template>
 <header>
-    <h1>Task Manager</h1>
+    <h1>{{ title }}</h1>
 </header>
 </template>
 
@@ -8,6 +8,9 @@
 <script>
 export default{
     name:'Header',
+    props:{
+        title:String,
+    }
 }
 </script>
 
